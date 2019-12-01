@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+	<style>
+		.quanti{
+			color :#F0F0F0;
+			background-color: #444444;
+			height: auto;
+			width: 700px;
+			text-align: left;
+			font-size: 30px;
+			left: 50%;
+			margin-left: -350px;
+			position: absolute;
+		}
+		#title{
+			font-weight:700;
+			font-size: 30px;
+			text-align: center;
+			padding-top: 10px;
+		}
+		form{
+			margin: 10px 10px 10px 20px;
+			padding-bottom: 10px;
+		}
+		.row{
+			font-size: 25px;
+		}
+		.button{
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 10px;
+		}
+		.quanti fieldset{
+			padding-top: 20px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="quanti">
+	<div id="title">
+    <legend>增加快递信息</legend>
+  </div>
+  <form method="post" action="">
+    <fieldset>
+    <legend>发货单</legend>
+    <div class="row">
+      <label>收货人:&nbsp;</label>
+      <input  class="txt" type="text" style="height:30px"/>
+      &nbsp;&nbsp;&nbsp;<label>地址:</label>
+		<input class="txt" type="text" style="height:30px"/>
+		</div></br>
+    <div class="row">
+		<label>电话:&nbsp;&nbsp;&nbsp;</label>
+      <input class="txt" type="text" style="height:30px"/>
+      &nbsp;&nbsp;&nbsp;<label>邮编:</label>
+      <input class="txt"   type="text" />
+    </div>
+    </fieldset>
+    <fieldset>
+    <legend>收货单</legend>
+    <div class="row">
+      <label>发货人:&nbsp;</label>
+      <input  class="txt" type="text" style="height:30px"/>
+      &nbsp;&nbsp;&nbsp;<label>地址:</label>
+		<input class="txt" type="text" style="height:30px"/>
+		</div></br>
+    <div class="row">
+		<label>电话:&nbsp;&nbsp;&nbsp;</label>
+      <input class="txt" type="text" style="height:30px"/>
+      &nbsp;&nbsp;&nbsp;<label>邮编:</label>
+      <input class="txt"   type="text" style="height:30px"/>
+	</div></br>
+	<div class="row">
+		<label>地区:&nbsp;&nbsp;&nbsp;</label>
+      <select  style="height: 30px; width: 200px;">
+        <option>北京</option>
+        <option>上海</option>
+        <option>武汉</option>
+        <option>乌鲁木齐</option>
+      </select>
+	</div>
+		<div class="row">
+      <p>
+		  <label>包装:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label>
+        <input type="checkbox" name="way" value="单选"/>
+        纸箱</label>
+        <label>
+        <input type="checkbox" name="way" value="单选"/>
+        木箱</label>
+        <label>
+        <input type="checkbox" name="way" value="单选"/>
+        快递袋</label>
+		<input type="checkbox" name="way" value="单选"/>
+        其它</label>
+      </p>
+    </div>
+<div class="row">
+      <p>
+		  <label>付款方式:</label>
+        <label>
+        <input type="radio" name="pay" value="单选"/>
+        现金</label>
+        <label>
+        <input type="radio" name="pay" value="单选"/>
+        支付宝</label>
+        <label>
+        <input type="radio" name="pay" value="单选"/>
+        网银</label>
+		<input type="radio" name="pay" value="单选"/>
+        ATM</label>
+      </p>
+    </div>
+    </fieldset>
+    <fieldset style="height: 150px; width: auto;">
+    <legend>货物信息</legend>
+		<div class="row">
+     <label>货物名称:</label>
+		<input class="txt"   type="text" style="height: 30px; width: 470px;"/>
+		</div></br>
+    <div class="row">
+      <label>数量:&nbsp;</label>
+      <input class="txt" style="height: 30px; width: 30px;"  type="text" />
+      <label>重量:</label>
+      <input class="txt" style="width: 30px; height: 30px;"  type="text" />
+      <label>发货时间:</label>
+      <input class="txt" style="width: 200px; height: 30px;"  type="text" />
+    </div>
+    </fieldset>
+  </form>
+<div class="button">
+	<input type="button" name="button" value="确定" style="width: 50px;">
+	<input type="reset" name="reset" value="取消" style=" width: 50px;">
+	</div>
+</div>
+</body>
+</html>
